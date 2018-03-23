@@ -20,5 +20,37 @@
   </head>
 
   <body>
+    <div class="main" role="main">
+      <div class="number-of-stations">
+        <label>Number of Stations:</label>
+        <input class="config-input" type="number" step="1" value="10" />
+      </div>
+      <div class="time-per-station">
+        <label>Time per station (seconds):</label>
+        <input class="config-input" type="number" step="1" value="60" />
+      </div>
+      <div class="break-time">
+        <label>Break time between station (seconds):</label>
+        <input class="config-input" type="number" step="1" value="10" />
+      </div>
+
+      <button class="start-btn">Start</button>
+      <button class="reset-btn">Reset</button>
+
+      <hr>
+
+      <h2>
+        <label>Station time remaining (seconds):</label>
+        <span class="station-time-remaining"></span>
+      </h2>
+      <h2>
+        <label>Overall time remaining (seconds):</label>
+        <span class="overall-time-remaining"></span>
+      </h2>
+      <h2>
+        <label>Epoch #:</label>
+        <span class="epoch-number"></span>
+      </h2>
+    </div>
   </body>
 </html>
